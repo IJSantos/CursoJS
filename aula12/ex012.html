@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saudações</title>
+</head>
+
+<body>
+    <h1>Analise Tempo</h1>
+    Digite seu local: <input type="text" name="txtName" id="txtName">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <Div id="res">...</Div>
+    <script>
+        const timeElapsed = new Date();
+        var hora = timeElapsed.getHours()
+        var txtLocal = document.querySelector("input#txtName")
+        var res = document.getElementById("res")
+        function verificar() {
+
+            if (hora < 12) {
+                res.innerHTML = `<p><strong>Bom Dia! Agora são ${hora} horas em ${txtLocal.value}</strong></p>`
+            } else if (hora <= 18) {
+                res.innerHTML = `<p><strong>Boa Tarde! Agora são ${hora} horas em ${txtLocal.value}</strong></p>`
+            } else {
+                res.innerHTML = `<p><strong>Boa Noite! Agora são ${hora} horas  em ${txtLocal.value}</strong></p>`
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

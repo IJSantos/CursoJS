@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            border: 10cm;
+            background-color: rgb(141, 141, 176);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var valor = 150.30
+        var vlrFormat = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} )
+
+        var nome = window.prompt("Digite seu nome: ")
+        document.writeln(`<p> Olá ${nome}! seu nome tem ${nome.length} letras </p>`)
+        document.writeln(`Valor: ${vlrFormat}`)
+    </script>
+</body>
+</html>
