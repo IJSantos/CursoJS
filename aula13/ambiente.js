@@ -1,11 +1,11 @@
 var i = 1
 while (i <= 3){
-    console.log(`Passo ${i}!`)
+    console.log(`While ${i}!`)
     i++
 }
 
 i = 1
 do{
-    console.log(`Do Passo ${i}!`)
+    console.log(`Do While ${i}!`)
     i++   
 }while (i <= 3)
